@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7d8a00e62d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container d-flex justify-content-between">
+        <div class="col-lg-8 d-lg-flex">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Images/bison_Logos_Large_Wide_Black_240x.png"
+              class="logo"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-2">
+          <form class="d-flex justify-content-between">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success me-2">
+              <i class="fa-regular fa-user"></i>
+            </button>
+            <button class="btn btn-outline-success cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>0</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="sample container">
+      <div class="cart-tab">
+        <h1 class="text-center text-success">Cart List</h1>
+        <div class="cart-products"></div>
+        <div class="buttons">
+          <button class="close-btn bg-light text-success">Close</button>
+          <button class="check-out bg-success text-light">Check Out</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row d-md-flex justify-content-between">
+          <div class="col-md-5">
+            <form action="get">
+              <label for="email" class="my-2"
+                >Submit your email to subscribe:</label
+              >
+              <input type="email" placeholder="Email" class="p-2 email" />
+              <button type="submit" class="submit-email">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-2 my-3">
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item">Home</li>
+              <li class="list-group-item">Shop</li>
+              <li class="list-group-item">About</li>
+              <li class="list-group-item">Contact</li>
+            </ul>
+          </div>
+          <div class="col-md-3 socials--container">
+            <h3 class="title">Socials:</h3>
+            <div class="footer--socials">
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
